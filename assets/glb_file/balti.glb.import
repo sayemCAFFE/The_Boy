@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dbyi3s5a8vakr"
+uid="uid://dt0snl0fakk2j"
 path="res://.godot/imported/balti.glb-1e472cc6f119ba076d1512598ce43ef0.scn"
 
 [deps]
@@ -18,6 +18,7 @@ nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
 meshes/create_shadow_meshes=true

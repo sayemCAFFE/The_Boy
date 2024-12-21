@@ -95,6 +95,7 @@ shape = SubResource("ConcavePolygonShape3D_um71e")
 
 [node name="roof" type="MeshInstance3D" parent="."]
 transform = Transform3D(11.1382, 0, 0, 0, 0.115831, 0, 0, 0, 13.6304, 0, 5.63333, -13.5383)
+visible = false
 material_override = SubResource("StandardMaterial3D_hjbaa")
 mesh = SubResource("ArrayMesh_2p3ec")
 skeleton = NodePath("")

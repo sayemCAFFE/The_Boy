@@ -76,7 +76,7 @@ func _pick_up_item(item):
 	grab_tween.tween_property(held_item, "global_position", joint.global_position, 0.2)
 
 func _throw_held_object():
-	if held_item != null: return
+	if held_item == null: return
 	var obj:RigidBody3D = held_item
 	held_item = null
 	joint.set_node_b(joint.get_path())

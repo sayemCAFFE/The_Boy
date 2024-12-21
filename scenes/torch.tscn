@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://sxabs0o48c83"]
+
+[ext_resource type="Script" path="res://scripts/torch.gd" id="1_rrtch"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_17101"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_m0usc"]
+
+[node name="torch" type="StaticBody3D" groups=["highlight", "pick_up"]]
+script = ExtResource("1_rrtch")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0119378, -0.999929, 0, 0.999929, 0.0119378, 0, 0, 0)
+mesh = SubResource("CylinderMesh_17101")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -0.202155, -0.979353, 0, 0.979353, -0.202155, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.00167553, -0.999999, 0, 0.999999, -0.00167553, 0, 0, 0)
+shape = SubResource("CylinderShape3D_m0usc")

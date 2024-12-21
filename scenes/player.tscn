@@ -4,8 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://btksmhfalu00a" path="res://scenes/control.tscn" id="2_cyxrl"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0r6kf"]
+radius = 0.2
+height = 0.4
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_20jx5"]
+radius = 0.2
+height = 1.2
 
 [node name="player" type="CharacterBody3D"]
 script = ExtResource("1_q46oh")
@@ -17,9 +21,10 @@ shape = SubResource("CapsuleShape3D_0r6kf")
 mesh = SubResource("CapsuleMesh_20jx5")
 
 [node name="Camera" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.839019, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.572173, -0.15589)
 
 [node name="Camera3D" type="Camera3D" parent="Camera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.167437, 0)
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera"]
 unique_name_in_owner = true
